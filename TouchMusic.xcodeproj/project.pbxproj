@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8912B1BB157D5E6500A4CB0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BA157D5E6500A4CB0D /* UIKit.framework */; };
+		8912B1BD157D5E6500A4CB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BC157D5E6500A4CB0D /* Foundation.framework */; };
+		8912B1BF157D5E6500A4CB0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BE157D5E6500A4CB0D /* CoreGraphics.framework */; };
+		8912B1C5157D5E6500A4CB0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8912B1C3157D5E6500A4CB0D /* InfoPlist.strings */; };
+		8912B1C7157D5E6500A4CB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912B1C6157D5E6500A4CB0D /* main.m */; };
+		8912B1CB157D5E6500A4CB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912B1CA157D5E6500A4CB0D /* AppDelegate.m */; };
+		8912B1CE157D5E6500A4CB0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912B1CD157D5E6500A4CB0D /* ViewController.m */; };
+		8912B1D1157D5E6500A4CB0D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8912B1CF157D5E6500A4CB0D /* ViewController.xib */; };
+		8912B1D9157D5E6500A4CB0D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1D8157D5E6500A4CB0D /* SenTestingKit.framework */; };
+		8912B1DA157D5E6500A4CB0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BA157D5E6500A4CB0D /* UIKit.framework */; };
+		8912B1DB157D5E6500A4CB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BC157D5E6500A4CB0D /* Foundation.framework */; };
+		8912B1E3157D5E6500A4CB0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8912B1E1157D5E6500A4CB0D /* InfoPlist.strings */; };
+		8912B1E6157D5E6500A4CB0D /* TouchMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912B1E5157D5E6500A4CB0D /* TouchMusicTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8912B1DC157D5E6500A4CB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8912B1AD157D5E6400A4CB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8912B1B5157D5E6500A4CB0D;
+			remoteInfo = TouchMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8912B1B6157D5E6500A4CB0D /* TouchMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8912B1BA157D5E6500A4CB0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8912B1BC157D5E6500A4CB0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8912B1BE157D5E6500A4CB0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8912B1C2157D5E6500A4CB0D /* TouchMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchMusic-Info.plist"; sourceTree = "<group>"; };
+		8912B1C4157D5E6500A4CB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8912B1C6157D5E6500A4CB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8912B1C8157D5E6500A4CB0D /* TouchMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchMusic-Prefix.pch"; sourceTree = "<group>"; };
+		8912B1C9157D5E6500A4CB0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8912B1CA157D5E6500A4CB0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8912B1CC157D5E6500A4CB0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8912B1CD157D5E6500A4CB0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8912B1D0157D5E6500A4CB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8912B1D7157D5E6500A4CB0D /* TouchMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8912B1D8157D5E6500A4CB0D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8912B1E0157D5E6500A4CB0D /* TouchMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchMusicTests-Info.plist"; sourceTree = "<group>"; };
+		8912B1E2157D5E6500A4CB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8912B1E4157D5E6500A4CB0D /* TouchMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchMusicTests.h; sourceTree = "<group>"; };
+		8912B1E5157D5E6500A4CB0D /* TouchMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchMusicTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8912B1B3157D5E6500A4CB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1BB157D5E6500A4CB0D /* UIKit.framework in Frameworks */,
+				8912B1BD157D5E6500A4CB0D /* Foundation.framework in Frameworks */,
+				8912B1BF157D5E6500A4CB0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8912B1D3157D5E6500A4CB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1D9157D5E6500A4CB0D /* SenTestingKit.framework in Frameworks */,
+				8912B1DA157D5E6500A4CB0D /* UIKit.framework in Frameworks */,
+				8912B1DB157D5E6500A4CB0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8912B1AB157D5E6400A4CB0D = {
+			isa = PBXGroup;
+			children = (
+				8912B1C0157D5E6500A4CB0D /* TouchMusic */,
+				8912B1DE157D5E6500A4CB0D /* TouchMusicTests */,
+				8912B1B9157D5E6500A4CB0D /* Frameworks */,
+				8912B1B7157D5E6500A4CB0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8912B1B7157D5E6500A4CB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1B6157D5E6500A4CB0D /* TouchMusic.app */,
+				8912B1D7157D5E6500A4CB0D /* TouchMusicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8912B1B9157D5E6500A4CB0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1BA157D5E6500A4CB0D /* UIKit.framework */,
+				8912B1BC157D5E6500A4CB0D /* Foundation.framework */,
+				8912B1BE157D5E6500A4CB0D /* CoreGraphics.framework */,
+				8912B1D8157D5E6500A4CB0D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8912B1C0157D5E6500A4CB0D /* TouchMusic */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1C9157D5E6500A4CB0D /* AppDelegate.h */,
+				8912B1CA157D5E6500A4CB0D /* AppDelegate.m */,
+				8912B1CC157D5E6500A4CB0D /* ViewController.h */,
+				8912B1CD157D5E6500A4CB0D /* ViewController.m */,
+				8912B1CF157D5E6500A4CB0D /* ViewController.xib */,
+				8912B1C1157D5E6500A4CB0D /* Supporting Files */,
+			);
+			path = TouchMusic;
+			sourceTree = "<group>";
+		};
+		8912B1C1157D5E6500A4CB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1C2157D5E6500A4CB0D /* TouchMusic-Info.plist */,
+				8912B1C3157D5E6500A4CB0D /* InfoPlist.strings */,
+				8912B1C6157D5E6500A4CB0D /* main.m */,
+				8912B1C8157D5E6500A4CB0D /* TouchMusic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8912B1DE157D5E6500A4CB0D /* TouchMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1E4157D5E6500A4CB0D /* TouchMusicTests.h */,
+				8912B1E5157D5E6500A4CB0D /* TouchMusicTests.m */,
+				8912B1DF157D5E6500A4CB0D /* Supporting Files */,
+			);
+			path = TouchMusicTests;
+			sourceTree = "<group>";
+		};
+		8912B1DF157D5E6500A4CB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8912B1E0157D5E6500A4CB0D /* TouchMusicTests-Info.plist */,
+				8912B1E1157D5E6500A4CB0D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8912B1B5157D5E6500A4CB0D /* TouchMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8912B1E9157D5E6500A4CB0D /* Build configuration list for PBXNativeTarget "TouchMusic" */;
+			buildPhases = (
+				8912B1B2157D5E6500A4CB0D /* Sources */,
+				8912B1B3157D5E6500A4CB0D /* Frameworks */,
+				8912B1B4157D5E6500A4CB0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchMusic;
+			productName = TouchMusic;
+			productReference = 8912B1B6157D5E6500A4CB0D /* TouchMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8912B1D6157D5E6500A4CB0D /* TouchMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8912B1EC157D5E6500A4CB0D /* Build configuration list for PBXNativeTarget "TouchMusicTests" */;
+			buildPhases = (
+				8912B1D2157D5E6500A4CB0D /* Sources */,
+				8912B1D3157D5E6500A4CB0D /* Frameworks */,
+				8912B1D4157D5E6500A4CB0D /* Resources */,
+				8912B1D5157D5E6500A4CB0D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8912B1DD157D5E6500A4CB0D /* PBXTargetDependency */,
+			);
+			name = TouchMusicTests;
+			productName = TouchMusicTests;
+			productReference = 8912B1D7157D5E6500A4CB0D /* TouchMusicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8912B1AD157D5E6400A4CB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 8912B1B0157D5E6400A4CB0D /* Build configuration list for PBXProject "TouchMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8912B1AB157D5E6400A4CB0D;
+			productRefGroup = 8912B1B7157D5E6500A4CB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8912B1B5157D5E6500A4CB0D /* TouchMusic */,
+				8912B1D6157D5E6500A4CB0D /* TouchMusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8912B1B4157D5E6500A4CB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1C5157D5E6500A4CB0D /* InfoPlist.strings in Resources */,
+				8912B1D1157D5E6500A4CB0D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8912B1D4157D5E6500A4CB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1E3157D5E6500A4CB0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8912B1D5157D5E6500A4CB0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8912B1B2157D5E6500A4CB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1C7157D5E6500A4CB0D /* main.m in Sources */,
+				8912B1CB157D5E6500A4CB0D /* AppDelegate.m in Sources */,
+				8912B1CE157D5E6500A4CB0D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8912B1D2157D5E6500A4CB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8912B1E6157D5E6500A4CB0D /* TouchMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8912B1DD157D5E6500A4CB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8912B1B5157D5E6500A4CB0D /* TouchMusic */;
+			targetProxy = 8912B1DC157D5E6500A4CB0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8912B1C3157D5E6500A4CB0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8912B1C4157D5E6500A4CB0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8912B1CF157D5E6500A4CB0D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8912B1D0157D5E6500A4CB0D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		8912B1E1157D5E6500A4CB0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8912B1E2157D5E6500A4CB0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8912B1E7157D5E6500A4CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8912B1E8157D5E6500A4CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8912B1EA157D5E6500A4CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMusic/TouchMusic-Prefix.pch";
+				INFOPLIST_FILE = "TouchMusic/TouchMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8912B1EB157D5E6500A4CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMusic/TouchMusic-Prefix.pch";
+				INFOPLIST_FILE = "TouchMusic/TouchMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8912B1ED157D5E6500A4CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchMusic.app/TouchMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMusic/TouchMusic-Prefix.pch";
+				INFOPLIST_FILE = "TouchMusicTests/TouchMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8912B1EE157D5E6500A4CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TouchMusic.app/TouchMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchMusic/TouchMusic-Prefix.pch";
+				INFOPLIST_FILE = "TouchMusicTests/TouchMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8912B1B0157D5E6400A4CB0D /* Build configuration list for PBXProject "TouchMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8912B1E7157D5E6500A4CB0D /* Debug */,
+				8912B1E8157D5E6500A4CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8912B1E9157D5E6500A4CB0D /* Build configuration list for PBXNativeTarget "TouchMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8912B1EA157D5E6500A4CB0D /* Debug */,
+				8912B1EB157D5E6500A4CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8912B1EC157D5E6500A4CB0D /* Build configuration list for PBXNativeTarget "TouchMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8912B1ED157D5E6500A4CB0D /* Debug */,
+				8912B1EE157D5E6500A4CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8912B1AD157D5E6400A4CB0D /* Project object */;
+}
