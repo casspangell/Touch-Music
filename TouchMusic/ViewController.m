@@ -13,21 +13,37 @@
 @end
 
 @implementation ViewController
-@synthesize touchStatus, methodStatus, tapStatus, xyPoint, touchesView;
+@synthesize touchStatus, methodStatus, tapStatus, xyPoint, touchesView, accelerometer, accelX, accelY, accelZ;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
     
-    touchesView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 300, 440)];
+    touchesView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     touchesView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:touchesView];
+    
+    self.accelerometer = [UIAccelerometer sharedAccelerometer];
+    self.accelerometer.updateInterval = .1;
+    self.accelerometer.delegate = self;
 }
 
--(void) updateColor: (CGPoint *)touchPoint{
-    
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+    NSLog(@"Raw:(%f, %f, %f)", ABS(acceleration.x), ABS(acceleration.y), ABS(acceleration.z));
+    
+    CGFloat redPoint = ABS(acceleration.x); 
+    CGFloat greenPoint = ABS(acceleration.y);
+    CGFloat bluePoint = ABS(acceleration.z);
+    
+     NSLog(@"Accel:(%f, %f, %f)", redPoint, greenPoint, bluePoint);
+    touchesView.backgroundColor = [[UIColor alloc] initWithRed:redPoint green:greenPoint blue:bluePoint alpha:1];
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -38,14 +54,6 @@
                         @"%d touches", touchCount];
     tapStatus.text = [NSString stringWithFormat:
                       @"%d taps", tapCount];
-    
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self.view];
-
-    CGFloat pointX = point.x;
-    CGFloat pointY = point.y;
-
-    xyPoint.text = [NSString stringWithFormat:@"%@", NSStringFromCGPoint(point)];
     
 }
 
@@ -60,12 +68,25 @@
     
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
+
+    //fNSLog(@"move:%f %f %f", (point.x/255.f),(point.y/255.f),(point.x/255.f));
     
-    CGFloat pointX = point.x;
-    CGFloat pointY = point.y;
+    CGFloat redPoint = ((point.x*.79)/255.f); //255/320 = .79
+    CGFloat greenPoint = ((point.y*.55)/255.f);//255/480 = .53
+    CGFloat bluePoint = (point.x/255.f);
     
-    NSLog(@"move:%f %f", pointX,pointY);
-    touchesView.backgroundColor = [[UIColor alloc] initWithRed:(point.x/255.f) green:(point.y/255.f) blue:(0/255.f) alpha:1];
+    if(redPoint <= 0){
+        redPoint = 0.0;
+    }
+    if(greenPoint <= 0){
+        greenPoint = 0.0;
+    }
+    if(bluePoint <= 0){
+        bluePoint = 0.0;
+    }
+    
+    NSLog(@"points: %f, %f, %f (%f,%f)", redPoint, greenPoint, bluePoint, point.x, point.y);
+    touchesView.backgroundColor = [[UIColor alloc] initWithRed:redPoint green:greenPoint blue:bluePoint alpha:1];
      
 }
 
@@ -81,7 +102,7 @@
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
     
-    NSLog(@"%@", NSStringFromCGPoint(point));
+   // NSLog(@"%@", NSStringFromCGPoint(point));
 }
 
 - (void)viewDidUnload
@@ -90,9 +111,5 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
 
 @end
