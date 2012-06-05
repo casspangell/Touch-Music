@@ -20,6 +20,7 @@
 		8912B1DB157D5E6500A4CB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8912B1BC157D5E6500A4CB0D /* Foundation.framework */; };
 		8912B1E3157D5E6500A4CB0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8912B1E1157D5E6500A4CB0D /* InfoPlist.strings */; };
 		8912B1E6157D5E6500A4CB0D /* TouchMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912B1E5157D5E6500A4CB0D /* TouchMusicTests.m */; };
+		899275AD157E55C500DE9037 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899275AC157E55C500DE9037 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		8912B1E2157D5E6500A4CB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8912B1E4157D5E6500A4CB0D /* TouchMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchMusicTests.h; sourceTree = "<group>"; };
 		8912B1E5157D5E6500A4CB0D /* TouchMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchMusicTests.m; sourceTree = "<group>"; };
+		899275AC157E55C500DE9037 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899275AD157E55C500DE9037 /* AudioToolbox.framework in Frameworks */,
 				8912B1BB157D5E6500A4CB0D /* UIKit.framework in Frameworks */,
 				8912B1BD157D5E6500A4CB0D /* Foundation.framework in Frameworks */,
 				8912B1BF157D5E6500A4CB0D /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		8912B1B9157D5E6500A4CB0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				899275AC157E55C500DE9037 /* AudioToolbox.framework */,
 				8912B1BA157D5E6500A4CB0D /* UIKit.framework */,
 				8912B1BC157D5E6500A4CB0D /* Foundation.framework */,
 				8912B1BE157D5E6500A4CB0D /* CoreGraphics.framework */,
@@ -427,6 +431,7 @@
 				8912B1EB157D5E6500A4CB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8912B1EC157D5E6500A4CB0D /* Build configuration list for PBXNativeTarget "TouchMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +440,7 @@
 				8912B1EE157D5E6500A4CB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

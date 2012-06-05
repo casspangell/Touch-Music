@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController : UIViewController <UIAccelerometerDelegate>{
     
@@ -14,28 +15,32 @@
     UILabel *methodStatus;
     UILabel *tapStatus;
     UILabel *xyPoint;
-
+    UIButton *playButton;
     UIView *touchesView;
     
     UIAccelerometer *accelerometer;
     
-    NSNumber *accelX;
-    NSNumber *accelY;
-    NSNumber *accelZ;
+    AudioComponentInstance toneUnit;
+    
+@public
+	double frequency;
+	double sampleRate;
+	double theta;
+    
+    CGFloat redPoint, bluePoint, greenPoint;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *touchStatus;
 @property (strong, nonatomic) IBOutlet UILabel *methodStatus;
 @property (strong, nonatomic) IBOutlet UILabel *tapStatus;
 @property (strong, nonatomic) IBOutlet UILabel *xyPoint;
-
-@property (nonatomic, retain) NSNumber *accelX;
-@property (nonatomic, retain) NSNumber *accelY;
-@property (nonatomic, retain) NSNumber *accelZ;
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
 
 @property (nonatomic, retain) UIView *touchesView;
 @property (nonatomic, retain) UIAccelerometer *accelerometer;
 
 -(void) updateColor: (CGPoint *)touchPoint;
+-(void) colorChange;
+-(IBAction)togglePlay:(UIButton *)selectedButton;
 
 @end
